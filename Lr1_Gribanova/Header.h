@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <conio.h>
 
 struct Pipe
 {
@@ -19,11 +20,13 @@ struct  Station
     int eff;
 };
 
-void print_pipe(Pipe& pipe);
+void print_pipe(const Pipe& pipe);
 
-void print_station(Station& station);
+void print_station(const Station& station);
 
 void print_menu();
+
+void pipe_process(const Pipe& pipe);
 
 void input_station(Station& station);
 
